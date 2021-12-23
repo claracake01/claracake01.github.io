@@ -1,34 +1,95 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>menu</title>
+	<style>
+		* {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
 
-	<link href='css/1.css' rel='stylesheet' type='text/css'>
+		body {
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-image: url(./resources/1.png);
+			background-size: cover;
+		}
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+		.shell {
+			position: fixed;
+			width: 280px;
+			height: 650px;
+			background-color: transparent;
+		}
 
-	<title>Menu</title>
+		.buttons {
+			margin: 60px 0;
+			color: #fff;
+			list-style: none;
+		}
+
+		.li {
+			letter-spacing: 2px;
+			font: 600 17px '';
+			padding: 16px 52px;
+			transition: .3s;
+			text-decoration: none;
+		}
+
+		.li::after {
+			content: '';
+			position: absolute;
+			left: 20px;
+			margin-top: -22px;
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-color: #fff;
+			border-radius: 50%;
+		}
+
+
+
+		.li ul {
+			width: -200px;
+			height: 400px;
+			padding: 60px 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+			overflow: hidden;
+			background-color: transparent;
+			transition: .3s;
+		}
+
+		.li ul li {
+			padding: 16px 24px;
+			transition: .3s;
+			text-decoration: none;
+		}
+
+		.li:hover ul {
+			width: 228px;
+		}
+
+		.li ul li:hover {
+			background-color: #828eb9;
+		}
+	</style>
 </head>
 
 <body>
-	<header>
-		<!-- <a id="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Homepage"></a> -->
-		<nav id="cd-top-nav">
-			<ul>
-				<li>This is a simple menu.</li>
-			</ul>
-		</nav>
-		<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
-	</header>
-	<nav id="cd-lateral-nav">
-		<ul class="cd-navigation">
-			<li class="item-has-children">
-				<a href="#0">Experiment 1</a>
-				<ul class="sub-menu">
+	<nav class="shell">
+		<ul class="buttons">
+			<li class="li">Experiment 1
+				<ul>
 					<li><a href="sy1/exp1-1.html">1-1</a></li>
 					<li><a href="sy1/exp1-2.html">1-2</a></li>
 					<li><a href="sy1/exp1-3.html">1-3</a></li>
@@ -36,54 +97,53 @@
 					<li><a href="sy1/exp1-5.html">1-5</a></li>
 					<li><a href="sy1/exp1-6.html">1-6</a></li>
 				</ul>
-			</li> <!-- item-has-children -->
-			<li class="item-has-children">
-				<a href="#0">Experiment 2</a>
-				<ul class="sub-menu">
+			</li>
+			<li class="li">Experiment 2
+				<ul>
 					<li><a href="sy2/exp2-1.html">2-1</a></li>
 					<li><a href="sy2/exp2-2.html">2-2</a></li>
 					<li><a href="sy2/exp2-3.html">2-3</a></li>
 					<li><a href="sy2/exp2-4.html">2-4</a></li>
 				</ul>
-			</li> <!-- item-has-children -->
-			<li class="item-has-children">
-				<a href="#0">Experiment 3</a>
-				<ul class="sub-menu">
+			</li>
+			<li class="li">Experiment 3
+				<ul>
 					<li><a href="sy3/exp3-1.html">3-1</a></li>
 					<li><a href="sy3/exp3-2.html">3-2</a></li>
 					<li><a href="sy3/exp3-3.html">3-3</a></li>
 					<li><a href="sy3/exp3-4.html">3-4</a></li>
 					<li><a href="sy3/exp3-5.html">3-5</a></li>
 				</ul>
-			</li> <!-- item-has-children -->
-			<li class="item-has-children">
-				<a href="#0">Experiment 4</a>
-				<ul class="sub-menu">
+			</li>
+			<li class="li">Experiment 4
+				<ul>
 					<li><a href="sy4/exp4-1.html">4-1</a></li>
 					<li><a href="sy4/exp4-2.html">4-2</a></li>
 				</ul>
-			</li> <!-- item-has-children -->
-			<li class="item-has-children">
-				<a href="#0">Experiment 5</a>
-				<ul class="sub-menu">
+			</li>
+			<li class="li">Experiment 5
+				<ul>
 					<li><a href="sy5/exp5.html">5</a></li>
 				</ul>
-			</li> <!-- item-has-children -->
-			<li class="item-has-children">
-				<a href="#0">Experiment 6</a>
-				<ul class="sub-menu">
-					<li><a href="sy6/exp6.html">6</a></li>
+			</li>
+			<li class="li">Experiment 6
+				<ul>
+					<li><a href="sy6/exp6.html">5</a></li>
 				</ul>
-			</li> <!-- item-has-children -->
-			<li class="item-has-children">
-				<a href="#0">Experiment 7</a>
-				<ul class="sub-menu">
+			</li>
+			<li class="li">Experiment 7
+				<ul>
 					<li><a href="sy7/sy7.1.html">7-1</a></li>
 					<li><a href="sy7/sy7.2.html">7-2</a></li>
 				</ul>
-			</li> <!-- item-has-children -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="js/main.js"></script> <!-- Resource jQuery -->
+			</li>
+			<li class="li">Experiment 8
+				<ul>
+
+				</ul>
+			</li>
+		</ul>
+	</nav>
 </body>
 
 </html>
