@@ -2,148 +2,146 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>menu</title>
-	<style>
-		* {
-			list-style-type: none;
-			padding: 0;
-			margin: 0;
-		}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        * {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-		body {
-			height: 100vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			background-image: url(./resources/1.png);
-			background-size: cover;
-		}
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d3dafa;
+        }
 
-		.shell {
-			position: fixed;
-			width: 280px;
-			height: 650px;
-			background-color: transparent;
-		}
+        .shell {
+            position: fixed;
+            width: 280px;
+            height: 650px;
+            background-color: #8a98c9;
+        }
 
-		.buttons {
-			margin: 60px 0;
-			color: #fff;
-			list-style: none;
-		}
+        .buttons {
+            margin: 60px 0;
+            color: #fff;
+        }
 
-		.li {
-			letter-spacing: 2px;
-			font: 600 17px '';
-			padding: 16px 52px;
-			transition: .3s;
-			text-decoration: none;
-		}
+        .li {
+            letter-spacing: 2px;
+            font: 600 17px '';
+            padding: 16px 52px;
+            transition: .3s;
+        }
 
-		.li::after {
-			content: '';
-			position: absolute;
-			left: 20px;
-			margin-top: -22px;
-			display: block;
-			width: 20px;
-			height: 20px;
-			background-color: #fff;
-			border-radius: 50%;
-		}
+        .li::after {
+            content: '';
+            position: absolute;
+            left: 20px;
+            margin-top: -22px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
 
+        .buttons>li:hover {
+            background-color: #beb5df;
+        }
 
+        .li ul {
+            width: 0;
+            height: 530px;
+            padding: 60px 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+            background-color: #59699b;
+            transition: .3s;
+        }
 
-		.li ul {
-			width: -200px;
-			height: 400px;
-			padding: 60px 0;
-			position: absolute;
-			top: 0;
-			right: 0;
-			overflow: hidden;
-			background-color: transparent;
-			transition: .3s;
-		}
+        .li ul li {
+            padding: 16px 24px;
+            transition: .3s;
+        }
 
-		.li ul li {
-			padding: 16px 24px;
-			transition: .3s;
-			text-decoration: none;
-		}
+        .li:hover ul {
+            width: 228px;
+        }
 
-		.li:hover ul {
-			width: 228px;
-		}
-
-		.li ul li:hover {
-			background-color: #828eb9;
-		}
-	</style>
+        .li ul li:hover {
+            background-color: #828eb9;
+        }
+    </style>
 </head>
 
 <body>
-	<nav class="shell">
-		<ul class="buttons">
-			<li class="li">Experiment 1
-				<ul>
-					<li><a href="sy1/exp1-1.html">1-1</a></li>
-					<li><a href="sy1/exp1-2.html">1-2</a></li>
-					<li><a href="sy1/exp1-3.html">1-3</a></li>
-					<li><a href="sy1/exp1-4.html">1-4</a></li>
-					<li><a href="sy1/exp1-5.html">1-5</a></li>
-					<li><a href="sy1/exp1-6.html">1-6</a></li>
-				</ul>
-			</li>
-			<li class="li">Experiment 2
-				<ul>
-					<li><a href="sy2/exp2-1.html">2-1</a></li>
-					<li><a href="sy2/exp2-2.html">2-2</a></li>
-					<li><a href="sy2/exp2-3.html">2-3</a></li>
-					<li><a href="sy2/exp2-4.html">2-4</a></li>
-				</ul>
-			</li>
-			<li class="li">Experiment 3
-				<ul>
-					<li><a href="sy3/exp3-1.html">3-1</a></li>
-					<li><a href="sy3/exp3-2.html">3-2</a></li>
-					<li><a href="sy3/exp3-3.html">3-3</a></li>
-					<li><a href="sy3/exp3-4.html">3-4</a></li>
-					<li><a href="sy3/exp3-5.html">3-5</a></li>
-				</ul>
-			</li>
-			<li class="li">Experiment 4
-				<ul>
-					<li><a href="sy4/exp4-1.html">4-1</a></li>
-					<li><a href="sy4/exp4-2.html">4-2</a></li>
-				</ul>
-			</li>
-			<li class="li">Experiment 5
-				<ul>
-					<li><a href="sy5/exp5.html">5</a></li>
-				</ul>
-			</li>
-			<li class="li">Experiment 6
-				<ul>
-					<li><a href="sy6/exp6.html">5</a></li>
-				</ul>
-			</li>
-			<li class="li">Experiment 7
-				<ul>
-					<li><a href="sy7/sy7.1.html">7-1</a></li>
-					<li><a href="sy7/sy7.2.html">7-2</a></li>
-				</ul>
-			</li>
-			<li class="li">Experiment 8
-				<ul>
-
-				</ul>
-			</li>
-		</ul>
-	</nav>
+    <nav class="shell">
+        <ul class="buttons">
+            <li class="li">Experiment 1
+                <ul>
+                    <li><a href="sy1/exp1-1.html">1-1</a></li>
+                    <li><a href="sy1/exp1-2.html">1-2</a></li>
+                    <li><a href="sy1/exp1-3.html">1-3</a></li>
+                    <li><a href="sy1/exp1-4.html">1-4</a></li>
+                    <li><a href="sy1/exp1-5.html">1-5</a></li>
+                    <li><a href="sy1/exp1-6.html">1-6</a></li>
+                </ul>
+            </li>
+            <li class="li">Experiment 2
+                <ul>
+                    <li><a href="sy2/exp2-1.html">2-1</a></li>
+                    <li><a href="sy2/exp2-2.html">2-2</a></li>
+                    <li><a href="sy2/exp2-3.html">2-3</a></li>
+                    <li><a href="sy2/exp2-4.html">2-4</a></li>
+                </ul>
+            </li>
+            <li class="li">Experiment 3
+                <ul>
+                    <li><a href="sy3/exp3-1.html">3-1</a></li>
+                    <li><a href="sy3/exp3-2.html">3-2</a></li>
+                    <li><a href="sy3/exp3-3.html">3-3</a></li>
+                    <li><a href="sy3/exp3-4.html">3-4</a></li>
+                    <li><a href="sy3/exp3-5.html">3-5</a></li>
+                </ul>
+            </li>
+            <li class="li">Experiment 4
+                <ul>
+                    <li><a href="sy4/exp4-1.html">4-1</a></li>
+                    <li><a href="sy4/exp4-2.html">4-2</a></li>
+                </ul>
+            </li>
+            <li class="li">Experiment 5
+                <ul>
+                    <li><a href="sy5/exp5.html">5</a></li>
+                </ul>
+            </li>
+            <li class="li">Experiment 6
+                <ul>
+                    <li><a href="sy6/exp6.html">5</a></li>
+                </ul>
+            </li>
+            <li class="li">Experiment 7
+                <ul>
+                    <li><a href="sy7/sy7.1.html">7-1</a></li>
+                    <li><a href="sy7/sy7.2.html">7-2</a></li>
+                </ul>
+            </li>
+            <li class="li">Experiment 8
+                <ul>
+                    <li><a href="sy8/index.html">8</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 </body>
 
 </html>

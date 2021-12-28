@@ -1,0 +1,57 @@
+*{margin:0;padding: 0;list-style: none;}
+a{text-decoration: none;}
+body{font:16px "微软雅黑" ;}
+.w{width: 1200px;margin:0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+
+.header{
+	background-image: url("../images/head1.jpg");
+	background-repeat:no-repeat;
+	background-size: 100%;
+	height: 860px;	
+}
+.head-inner{position:relative;}
+.logo{text-align: center;margin-bottom: 90px;}
+.nav{position: absolute;left:0;top:102px;}
+.nav li a{color: #fff;font-size: 32px;font-weight: bold;line-height: 42px;}
+.nav li a img{vertical-align: middle;margin-right: 20px;}
+.hdtxt{background: url(../images/bg1.png) left top no-repeat;height: 460px;overflow: hidden;padding-left: 60px;}
+.hdtxt p{width: 30px;font-size: 30px;padding-top: 54px;float: left;color: #fff;margin-right: 15px;}
+.p1{margin-top: 35px;}
+.p2{margin-top: 110px;}
+.p3{margin-top: 135px;}
+.imgbox{overflow: hidden;height: 512px;margin-bottom: 100px;}
+.gerentxt{width: 765px;margin:0 auto;}
+.gerentxt h2{text-align: center;margin-bottom: 26px;}
+.gerentxt p{line-height: 30px;margin: 100px 0;}
+.geren{position: relative;padding-top: 100px;}
+.geren-side{position: absolute;left:0;top:100px;width: 90px;height: 100%;}
+.geren-side p{width: 80px;height: 80px;border: 5px solid #d3dfff;border-radius: 50%;text-align: center;line-height: 85px;font-size: 30px;}
+.geren-side p img{vertical-align: middle;}
+.geren-side span{display: block;width: 1px;height: 80%;margin:20px auto;background: #111114;}
+.yanyijingli{background:#CE8AA1;padding: 90px 0;}
+.yanyijingli a{display: block;width: 320px;height: 66px;border: 2px solid #fff;color: #fff;text-align: center;line-height: 66px;margin:0 auto;font-size: 36px;}
+.zuopin{overflow: hidden;text-align: center;}
+h1{font-size: 30px;text-align: center;padding: 90px 0;color: #606c8d;}
+.zuopin p{width: 150px;margin:0 50px;display: inline-block;color: #606c8d;font-size: 26px;line-height: 40px;}
+.zongyi img{width: 32%;display: block;float: left;margin-right: 2%;}
+.zongyi{overflow: hidden;}
+.xian{width: 100%;height: 0;border-top: 1px dashed #ccc;margin-bottom: 70px;}
+.zazhi p{height: 240px;width: 230px;margin:0 50px;display: inline-block;color: #606c8d;font-size: 26px;line-height: 40px;vertical-align: top;}
+.zazhi{text-align: center;margin-bottom: 200px;}
+.renwu{width: 100%;position: relative;}
+.renwu img{display: block;width: 100%;}
+.renwuinner{position: absolute;width: 1200px;top:0;left:50%;margin-left: -600px;}
+.renwuinner h1{color: #CE8AA2;}
+.renwu-txt{
+   position: absolute;
+   width: 660px;
+   font-size: 30px;
+   line-height: 50px;
+   right:0;
+   top:200px;
+   color: #CE8AA2;
+}
+
+.footer{background:#CE8AA2;padding: 20px 0;text-align: center;}
